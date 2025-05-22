@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    position: relative;
+    justify-content: space-between;
+    width: 160vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 10% 0;
+    line-height: 10px;
+}
+.header-content h1 {
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.header-content h2 {
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+}
+.header-image img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+.icons a img{
+    padding: 5px;
+    padding-right: 15px;
+    height :30px;
+    width: 30px;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    opacity: 0;
+    animation: slideLeft 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+.icons a:hover {
+    background-color: aqua;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+}
+.navbar{
+    background-color: #555;
+    display: flex;
+    color: aliceblue;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.navbar a:hover {
+    color: aqua;
+}
+.nav {
+    padding: 5px 5px 5px 5px;
+}
+.logo {
+    color : aliceblue;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    align-items: left;
+    opacity: 0;
+    animation: slideRight 1s ease forwards;
+}
+.nav a{
+    color : aliceblue;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    align-items: left;
+    opacity: 0;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: calc(.1s * var(--i));
+}
+#ccimg{
+    width:75px
+}
+.Objective {
+    position: relative;
+    width: 160vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 40px 10% 0;
+    justify-content: center;
+    flex-direction: column;
+}
+.obj-hed {
+    font-size: 30px;
+    animation: slideBottom 1s ease forwards;
+}
+.obj-con {
+    display: flex;
+    justify-content: space-between;
+}
+.obj-con img {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    padding: 0 15% 0 0;
+    animation: slideRight 1s ease forwards;
+}
+.obj-con p {
+    padding-top: 45px;
+    animation: slideLeft 1s ease forwards;
+}
+.education {
+    position: relative;
+    width: 160vh;
+    height: 100vh;
+    padding: 40px 10% 0;
+}
+.education h2 {
+    display: flex;
+    justify-content: center;
+}
+.education table {
+    border-spacing: 35px;
+    padding: 20px 5% 0;
+    width: 100%;
+    height: 70%;
+    text-align: center;
+}
+.education table td {
+    border: 2px solid;
+    border-radius: 20px;
+}
+.education table td:hover {
+    color: bisque;
+    background-color: violet;
+}
+.skills{
+    position: relative;
+    width: 160vh;
+    height: 100vh;
+    padding: 40px 10% 0;
+    display: flex;
+    flex-direction: row;
+}
+.skill-head{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.skill{
+
+}
+/*
+#skill {
+    display: flex;
+    justify-content: left;
+}
+#skill div {
+    padding: 1% 2% 1% 2%;
+    border: solid;
+    margin: 1%;
+    border-radius: 5%;
+}
+#tandd ul {
+    list-style-type: none;
+}
+*/
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideBottom {
+    0% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideLeft {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
